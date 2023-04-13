@@ -1,0 +1,194 @@
+/*Globales*/
+:root{
+    --font-famili: Arial, Helvetica, sans-serif;
+    --font-famili2: fantasy;
+    --color: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    --separacion: 5rem;
+    --fondo: 
+
+    /*Fuentes*/
+    --delgada: 300;
+    --regular : 400;
+    --bold: 700;
+    --black: 900
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--font-famili) ;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+p {
+    color: var(--color);
+    font-size: 2rem;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-famili2);
+    margin: calc(var(--separacion) / 2) 0;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/*contenedores*/
+h1 span{
+    font-size: 5rem;
+    color: orangered;
+}
+h1{
+    color: white;
+}
+
+.contenedor-form{
+    margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+    .contenedor-form{
+        display: grid;
+        grid-template-columns: 150px 2fr 1fr;
+    }
+}
+
+.contenedor-titulo{
+    margin: 4rem 0;
+    text-align: center;
+}
+.contenedor-boton{
+    width: 15rem;
+}
+.input{
+    background: none;
+    color: rgb(29, 28, 28);
+    font-size: large;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-famili);
+    padding: 1rem;
+    background-color: rgb(108, 114, 114);
+    border-radius: 2rem;
+}
+.logo{
+    border-radius: 100%;
+    width: auto;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+.logo-alura{
+    display: flex;
+    justify-content: center;
+}
+.separacion{
+    padding: 0 1rem;
+    width: 100%;
+}
+.separacion p{
+    margin: 0;
+    font-size: small;
+    
+}
+.icon-advertencia{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(img/icons8-atención-50.png) no-repeat center;
+    background-size: contain;
+    margin-right: 5px;
+}
+.textarea{
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.596);
+    height: 50rem;
+    font-family: var(--font-famili);
+    font-size: larger;
+    resize: none;
+}
+.textarea2{
+    font-size: large;
+    background-color: #ffffff00;
+    width: 100%;
+    cursor: not-allowed;
+}
+.textarea2::-webkit-input-placeholder {
+    background: url('img/1907.i109.039.p.m004.c30.programming\ development\ isometric\ icons-14.jpg') no-repeat center;
+    background-size: contain;
+    height: 40rem;
+  }
+
+.cont2{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 3rem;
+    
+}
+
+.cont3{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 2rem;
+}
+.boton3{
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 2rem;
+}
+.footer p{
+    color: black;
+    text-align: center;
+}

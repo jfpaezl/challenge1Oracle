@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo2.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Challenge1</title>
+</head>
+<body>
+    <section class="contenedor-titulo" >
+        <h1>Challenge 1 <span>Oracle Next Education</span></h1>
+    </section>
+    <main class="contenedor contenedor-form">
+        
+        <div class="logo-alura">
+            <img src="img/logo2.png" alt="logo" class="logo">
+        </div>
+        <div>
+            <div class="separacion">
+                <textarea class="textarea" name="textarea" id="textarea" placeholder="Escribe el texto incriptado o Desencriptado"></textarea>
+                <p><samp class="icon-advertencia"></samp>Solo se permite letras minusculas</p>
+            </div>
+            <div class="cont2">
+                <div class="contenedor-boton">
+                    <input name="encriptar" id="encriptar" onclick="encriptar()" type="button" value="Encriptar!" class="input" >
+                </div>
+                <div class="contenedor-boton">
+                    <input name="desencriptar" id="desencriptar" onclick="desencriptar()" type="button" value="Desencriptar!" class="input">
+                </div>
+            </div>
+        </div>
+        <div class="cont3">
+            <div class="separacion">
+                <textarea class="textarea textarea2" name="textarea2" id="textarea2" placeholder="Texto encriptado o Desencriptado " disabled></textarea>
+            </div>
+            <div class="contenedor-boton boton3">
+                <input name="copiar" id="copiar" type="button" value="Copiar" onclick="copiar(evento)" class="input">
+            </div>
+        </div>    
+    </main>
+    <footer class="footer">
+        <p>Juan Felipe Paez Lizarazo grupo 5 Oracle Next Education</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
